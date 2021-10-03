@@ -12,7 +12,7 @@ export const LoginScreen = () => {
 
 
   const [formValues, handleInputChange] = useForm({
-    email: 'nando',
+    email: 'juan@mail.com',
     password: '123456'
   });
 
