@@ -1,5 +1,14 @@
 import { initializeApp } from "firebase/app";
-import { collection, getFirestore, addDoc, getDocs, query, doc, updateDoc} from "firebase/firestore";
+import {
+  collection,
+  getFirestore,
+  addDoc,
+  getDocs,
+  query,
+  doc,
+  updateDoc,
+  deleteDoc,
+} from "firebase/firestore";
 import {
   getAuth,
   GoogleAuthProvider,
@@ -8,7 +17,7 @@ import {
   updateProfile,
   signInWithEmailAndPassword,
   onAuthStateChanged,
-  signOut
+  signOut,
 } from "@firebase/auth";
 //Object that generate firebase to init database
 import { firebaseConfig } from "./firebase-config";
@@ -41,5 +50,6 @@ export {
   getDocs,
   query,
   doc,
-  updateDoc
+  updateDoc,
+  deleteDoc
 };
